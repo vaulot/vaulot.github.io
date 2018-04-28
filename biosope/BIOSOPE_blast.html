@@ -104,9 +104,9 @@ $(document).ready(function () {
       <li><a href="#analysis"><span class="toc-section-number">3</span> Analysis</a><ul>
       <li><a href="#to-do"><span class="toc-section-number">3.1</span> To do</a></li>
       <li><a href="#read-biosope_init.r"><span class="toc-section-number">3.2</span> Read BIOSOPE_init.R</a></li>
-      <li><a href="#run-the-blast-on-the-server"><span class="toc-section-number">3.3</span> Run the blast on the server</a></li>
+      <li><a href="#run-blast-on-server"><span class="toc-section-number">3.3</span> Run BLAST on server</a></li>
       <li><a href="#process-blast-output"><span class="toc-section-number">3.4</span> Process BLAST output</a></li>
-      <li><a href="#analyze-the-blast-output"><span class="toc-section-number">3.5</span> Analyze the BLAST output</a></li>
+      <li><a href="#analyze-blast-output"><span class="toc-section-number">3.5</span> Analyze BLAST output</a></li>
       <li><a href="#compare-the-dada2_taxonomy-and-the-blast-annotation-at-the-genus-level"><span class="toc-section-number">3.6</span> Compare the dada2_taxonomy and the BLAST annotation at the genus level</a></li>
       <li><a href="#change-made-to-the-taxonomy-assigned-by-dada2"><span class="toc-section-number">3.7</span> Change made to the taxonomy assigned by dada2</a></li>
       </ul></li>
@@ -143,8 +143,8 @@ $(document).ready(function () {
 <!-- install.packages("C:/Users/vaulot/Google Drive/Scripts/R/dvutils_0.1.1.zip", repos = NULL, type = "win.binary") -->
 <!-- library("dvutils", lib.loc="C:/Program Files/R/R-3.4.3/library") -->
 </div>
-<div id="run-the-blast-on-the-server" class="section level2">
-<h2><span class="header-section-number">3.3</span> Run the blast on the server</h2>
+<div id="run-blast-on-server" class="section level2">
+<h2><span class="header-section-number">3.3</span> Run BLAST on server</h2>
 <p>Using a qsub run the following code</p>
 <pre class="console"><code>DIR_PROJECT=&quot;/projet/umr7144/dipo/vaulot/mothur/biosope/blast/&quot;
 
@@ -168,9 +168,9 @@ blastn -max_target_seqs 100 -evalue 1.00e-10 -query $FASTA -out $BLAST_TSV -db /
 <li>a <strong>modified BLAST output file</strong> which includes additional coolumns
 <ul>
 <li>kingdom -&gt; species : PR2 taxonomy for those accession numbers that are present in PR2</li>
-<li>subject_rank : the rank of the hit based on decreasing % identity and decreasing bit scores</li>
+<li>hit_rank : the rank of the hit based on decreasing % identity and decreasing bit scores</li>
 <li>uncultured : TRUE if the hit corresponds to an uncultured item</li>
-<li>subject_lineage : GenBank taxonomy of the hit</li>
+<li>hit_lineage : GenBank taxonomy of the hit</li>
 </ul></li>
 <li>a <strong>summary file</strong> with one line per query that contains three sets of columns
 <ul>
@@ -180,7 +180,8 @@ blastn -max_target_seqs 100 -evalue 1.00e-10 -query $FASTA -out $BLAST_TSV -db /
 </ul></li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">blast_file_name &lt;-<span class="st"> </span><span class="kw">str_c</span>(dir_blast, <span class="st">&quot;dada2_seq_18S.tsv&quot;</span>)
-<span class="kw">reformat_blast_18S</span>(blast_file_name)</code></pre></div>
+<span class="kw">blast_18S_reformat</span>(blast_file_name)</code></pre></div>
+<pre><code>[1] TRUE</code></pre>
 <p>Read the modified BLAST file (100 lines per otu) and the BLAST summary file (1 line per otu).</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">blast_file &lt;-<span class="st"> </span><span class="kw">str_c</span>(dir_blast, <span class="st">&quot;dada2_seq_18S_pr2.tsv&quot;</span>)
 blast_summary_file &lt;-<span class="st"> </span><span class="kw">str_c</span>(dir_blast, <span class="st">&quot;dada2_seq_18S_summary.tsv&quot;</span>)
@@ -195,16 +196,16 @@ blast_summary &lt;-<span class="st"> </span><span class="kw">read_tsv</span>(bla
 <li>Save a file with the current taxonomy. This file will be used to correct the taxonomy</li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">dada2_otus &lt;-<span class="st"> </span><span class="kw">str_split_fixed</span>(blast_summary<span class="op">$</span>query_id, <span class="dt">pattern =</span> <span class="st">&quot;</span><span class="ch">\\</span><span class="st">|&quot;</span>, <span class="dv">8</span>)
-<span class="kw">colnames</span>(dada2_otus) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;OTUNumber&quot;</span>, <span class="kw">str_c</span>(<span class="st">&quot;dada2_&quot;</span>, pr2_var<span class="op">$</span>taxo_levels[<span class="dv">2</span><span class="op">:</span><span class="dv">8</span>]))
+<span class="kw">colnames</span>(dada2_otus) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;OTUNumber&quot;</span>, <span class="kw">str_c</span>(<span class="st">&quot;dada2_&quot;</span>, pr2_taxo_levels[<span class="dv">2</span><span class="op">:</span><span class="dv">8</span>]))
 blast_summary &lt;-<span class="st"> </span><span class="kw">cbind</span>(dada2_otus, blast_summary)
 <span class="kw">write_tsv</span>(<span class="kw">as.data.frame</span>(dada2_otus), <span class="kw">str_c</span>(dir_blast, <span class="st">&quot;dada2_taxo.tsv&quot;</span>, <span class="dt">na =</span> <span class="st">&quot;&quot;</span>))</code></pre></div>
 </div>
-<div id="analyze-the-blast-output" class="section level2">
-<h2><span class="header-section-number">3.5</span> Analyze the BLAST output</h2>
+<div id="analyze-blast-output" class="section level2">
+<h2><span class="header-section-number">3.5</span> Analyze BLAST output</h2>
 <div id="percent-identity-for-best-hit" class="section level3">
 <h3><span class="header-section-number">3.5.1</span> Percent identity for best hit</h3>
 <ul>
-<li>Mean identity of best hit(%) = <strong>98.46</strong></li>
+<li>Mean identity of best hit (%) = <strong>98.46</strong></li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">plot_pct &lt;-<span class="st"> </span><span class="kw">gg_hist</span>(blast_summary, <span class="st">&quot;hit_top_pct_identity&quot;</span>)
 plot_pct <span class="op">+</span><span class="st"> </span><span class="kw">xlim</span>(<span class="dv">100</span>, <span class="dv">80</span>) <span class="op">+</span><span class="st"> </span><span class="kw">ylim</span>(<span class="dv">0</span>, <span class="fl">0.75</span>) <span class="op">+</span><span class="st"> </span><span class="kw">ggtitle</span>(<span class="st">&quot;Best hit&quot;</span>)</code></pre></div>
@@ -213,7 +214,7 @@ plot_pct <span class="op">+</span><span class="st"> </span><span class="kw">xlim
 <pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
      82      98     100      98     100     100 </code></pre>
 <ul>
-<li>Mean identity of best hit to isolates(%) = <strong>94.81</strong></li>
+<li>Mean identity of best hit to isolates (%) = <strong>94.81</strong></li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">plot_pct &lt;-<span class="st"> </span><span class="kw">gg_hist</span>(blast_summary, <span class="st">&quot;hit_cult_pct_identity&quot;</span>)
 plot_pct <span class="op">+</span><span class="st"> </span><span class="kw">xlim</span>(<span class="dv">100</span>, <span class="dv">80</span>) <span class="op">+</span><span class="st"> </span><span class="kw">ylim</span>(<span class="dv">0</span>, <span class="fl">0.25</span>) <span class="op">+</span><span class="st"> </span><span class="kw">ggtitle</span>(<span class="st">&quot;Best hit to isolate&quot;</span>)</code></pre></div>
@@ -254,7 +255,7 @@ blast_disagree_division &lt;-<span class="st"> </span>blast_summary <span class=
 <li><p>Number of otus with difference in dada2 annotation and blast annotation (taxonomy is based on pr2).</p>
 <ul>
 <li><p>Division level : 22</p></li>
-<li><p>Genus level : 388</p></li>
+<li><p>Genus level : 385</p></li>
 </ul></li>
 </ul>
 <p><strong>Remarks</strong></p>
@@ -286,7 +287,7 @@ blast_disagree_division &lt;-<span class="st"> </span>blast_summary <span class=
 <caption>otu0007 - BLAST assignement - top 10 hits</caption>
 <thead>
 <tr class="header">
-<th align="left">subject_acc</th>
+<th align="left">hit_acc</th>
 <th align="right">pct_identity</th>
 <th align="right">bit_score</th>
 <th align="left">family</th>
@@ -395,7 +396,7 @@ blast_disagree_division &lt;-<span class="st"> </span>blast_summary <span class=
 <caption>otu0073 - BLAST assignement - top 20 hits</caption>
 <thead>
 <tr class="header">
-<th align="left">subject_acc</th>
+<th align="left">hit_acc</th>
 <th align="right">pct_identity</th>
 <th align="right">bit_score</th>
 <th align="left">family</th>
@@ -607,7 +608,7 @@ knitr<span class="op">::</span><span class="kw">kable</span>(<span class="kw">he
 
 <div id="postamble" data-toggle="wy-nav-shift" class="status">
 <p class="author"><span class="glyphicon glyphicon-user"></span> Daniel Vaulot</p>
-<p class="date"><span class="glyphicon glyphicon-calendar"></span> 26 04 2018</p>
+<p class="date"><span class="glyphicon glyphicon-calendar"></span> 28 04 2018</p>
 </div>
 
 
