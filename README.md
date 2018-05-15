@@ -1,8 +1,8 @@
 # Tutorials
 ## R
-* [R introduction](https://vaulot.github.io/metabarcoding/tutorials/R_introduction_tutorial.html)
-* [Phyloseq](https://vaulot.github.io/metabarcoding/tutorials/Phyloseq_tutorial.html)
-* [PLotting culture data](https://vaulot.github.io/metabarcoding/tutorials/R_tutorial_cultures.html)
+* [R introduction](https://vaulot.github.io/tutorials/R_introduction_tutorial.html)
+* [Phyloseq](https://vaulot.github.io/tutorials/Phyloseq_tutorial.html)
+* [PLotting culture data](https://vaulot.github.io/tutorials/R_tutorial_cultures.html)
 
 # Metabarcoding
 
