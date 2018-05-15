@@ -1,8 +1,3 @@
-Daniel Vaulot
-
-
-
-
 # Tutorials
 ## R
 * [R introduction](https://vaulot.github.io/metabarcoding/tutorials/R_introduction_tutorial.html)
@@ -31,4 +26,4 @@ Daniel Vaulot
 
 
 # Papers
-* [Distribution of Bolidophyceae](https://vaulot.github.io/pr2/Bolido_review.html)
+* [Distribution of Bolidophyceae](https://vaulot.github.io/papers/Bolido_review.html)
