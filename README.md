@@ -20,7 +20,7 @@
 
 ## PR2
 * [PR2 statistics](https://vaulot.github.io/pr2/PR2_analysis.html)
-* [PR2 primer analysis](https://vaulot.github.io/pr2/PR2_primers.html)
+* [PR2 primer analysis](https://vaulot.github.io/pr2/PR2_Primers.html)
 * [PR2 update 4.10](https://vaulot.github.io/pr2/PR2_update_4.10.0_pr2_original.html)
 * [PR2 update 4.9](https://vaulot.github.io/pr2/PR2_update_4.9.0_DinoRef.html)
 
