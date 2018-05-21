@@ -16,6 +16,9 @@
 * [07 - BLAST](https://vaulot.github.io/metabarcoding/nz_2017/07-NZ_2017_blast.html)
 * [08 - Phyloseq examples](https://vaulot.github.io/metabarcoding/nz_2017/08-NZ_2017_phyloseq_plots.html)
 
+# Metagenomes
+* [Subrata fish metagenomes - 2018](https://vaulot.github.io/metagenomes/Subrata_fish_metagenome_2018.html)
+
 # Databases
 
 ## PR2
