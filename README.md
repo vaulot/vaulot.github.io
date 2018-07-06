@@ -18,7 +18,7 @@
 
 ## Singapore
 * [Eukaryote analysis 97%](https://vaulot.github.io/metabarcoding/singapore/Metabarcoding_Singapore_97.html)
-* [Eukaryote analysis 97%](https://vaulot.github.io/metabarcoding/singapore/Metabarcoding_Singapore_98.html)
+* [Eukaryote analysis 98%](https://vaulot.github.io/metabarcoding/singapore/Metabarcoding_Singapore_98.html)
 
 # Metagenomes
 * [Subrata fish metagenomes - 2018](https://vaulot.github.io/metagenomes/Subrata_fish_metagenome_2018.html)
