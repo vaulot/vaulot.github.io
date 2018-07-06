@@ -17,7 +17,8 @@
 * [08 - Phyloseq examples](https://vaulot.github.io/metabarcoding/nz_2017/08-NZ_2017_phyloseq_plots.html)
 
 ## Singapore
-* [Eukaryote analysis](https://vaulot.github.io/metabarcoding/singapore/Metabarcoding_Singapore.html)
+* [Eukaryote analysis 97%](https://vaulot.github.io/metabarcoding/singapore/Metabarcoding_Singapore_97.html)
+* [Eukaryote analysis 97%](https://vaulot.github.io/metabarcoding/singapore/Metabarcoding_Singapore_98.html)
 
 # Metagenomes
 * [Subrata fish metagenomes - 2018](https://vaulot.github.io/metagenomes/Subrata_fish_metagenome_2018.html)
