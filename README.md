@@ -35,7 +35,8 @@
 ## RCC
 * [RCC statistics](https://vaulot.github.io/rcc/RCC_statistics.html)
 * [RCC extract data](https://vaulot.github.io/rcc/RCC_custom_lists.html)
-
+* [Submit sequences to Genbank](https://vaulot.github.io/rcc/RCC-genbank-submission.html)
+* [Submit sequences to Genbank - pdf version](https://vaulot.github.io/rcc/RCC-genbank-submission.pdf)
 # Papers
 * [Distribution of Bolidophyceae](https://vaulot.github.io/papers/Bolido_review.html)
 * [Distribution of Malina RCC2288](https://vaulot.github.io/papers/RCC2288.html)
