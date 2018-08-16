@@ -42,4 +42,4 @@
 * [Distribution of Bolidophyceae](https://vaulot.github.io/papers/Bolido_review.html)
 * [Distribution of Malina RCC2288](https://vaulot.github.io/papers/RCC2288.html)
 * [Distribution of Chlorophyta at OSD stations](https://vaulot.github.io/papers/OSD_Chlorophyta.html)
-* [Distribution of Pelagophyceae at OSD stations](Pelago_metabarcodes_version_2.0.html)
+* [Distribution of Pelagophyceae at OSD stations](https://vaulot.github.io/papers/Pelago_metabarcodes_version_2.0.html)
