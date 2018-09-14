@@ -2,7 +2,10 @@
 ## R
 * [R introduction](https://vaulot.github.io/tutorials/R_introduction_tutorial.html)
 * [Phyloseq](https://vaulot.github.io/tutorials/Phyloseq_tutorial.html)
-* [PLotting culture data](https://vaulot.github.io/tutorials/R_tutorial_cultures.html)
+* [Plotting culture data](https://vaulot.github.io/tutorials/R_tutorial_cultures.html)
+
+## Metabarcoding
+* [Metabarcoding analysis with dada2](https://vaulot.github.io/tutorials/R_dada2_tutorial.html)
 
 # Metabarcoding
 
