@@ -36,7 +36,7 @@
 ## PR2
 * [PR2 statistics](https://vaulot.github.io/pr2/PR2_analysis.html)
 * [PR2 primer analysis](https://vaulot.github.io/pr2/PR2_Primers.html)
-* [PR2 update 4.11 - Management](https://vaulot.github.io/pr2/PR2_update_4.11.0_EukRef_Ciliates.html)
+* [PR2 update 4.11 - Management](https://vaulot.github.io/pr2/PR2_update_4.11.0_Misc.html)
 * [PR2 update 4.11 - Chloropicophyceae](https://vaulot.github.io/pr2/PR2_update_4.11.0_Chloropicophyceae.html)
 * [PR2 update 4.11 - Mamiellophyceae](https://vaulot.github.io/pr2/PR2_update_4.11.0_Mamiellophyceae.html)
 * [PR2 update 4.11 - Ciliophora](https://vaulot.github.io/pr2/PR2_update_4.11.0_EukRef_Ciliates.html)
