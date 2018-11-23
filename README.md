@@ -6,6 +6,7 @@
 
 ## Metabarcoding
 * [Metabarcoding analysis with dada2](https://vaulot.github.io/tutorials/R_dada2_tutorial.html)
+* [Compare analysis with mothur vs. dada2](https://vaulot.github.io/tutorials/R_dada2_vs_mothur.html)
 
 # Metabarcoding
 
