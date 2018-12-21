@@ -29,6 +29,9 @@
 ## Antarctica 2015 - Sorted samples
 * [Dada2](https://vaulot.github.io/metabarcoding/antarctica_2015/Antar_dada2.html)
 
+# Cruises
+* [Ilhas cruises 1 and 2 - Brazil 2017](https://vaulot.github.io/cruises/Ilhas_01.html)
+
 # Metagenomes
 * [Subrata fish metagenomes - 2018](https://vaulot.github.io/metagenomes/Subrata_fish_metagenome_2018.html)
 
