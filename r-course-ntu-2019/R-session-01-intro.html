@@ -252,9 +252,7 @@ print("Hello world")
 
 &lt;img src="img/R-new-script.png" width="35%" style="display: block; margin: auto;" /&gt;
 
---
-
-Type in script window, select and execute (CTRL-R)
+.student[Type in script window, select and execute (CTRL-R)]
 
 
 ---
@@ -463,8 +461,6 @@ PoTU
 [1] "Donald" "Trump" 
 ```
 
----
-
 ## Assign logical
 
 
@@ -491,17 +487,6 @@ x[1]
 [1] 10
 ```
 
---
-
-### Remove one element
-
-```r
-x[-1]
-```
-
-```
- [1] 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
-```
 
 --
 
@@ -515,6 +500,17 @@ x[1:5]
 [1] 10 11 12 13 14
 ```
 
+--
+
+### Remove one element
+
+```r
+x[-1]
+```
+
+```
+ [1] 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
+```
 
 
 ---
@@ -545,7 +541,7 @@ length(x)
 --
 
 .student[
-What is the type and length of **name** ?
+What is the type and length of **PoTU** ?
 ]
 
 ---
@@ -597,12 +593,6 @@ Vector one element
 
 Vector several elements 
 
-.footnote[
-Note: 
-* Several instructions on same line separate by **;**
-* The hastag **#** indicate a comment -&gt; Use heavily to document your code
-
-]
 
 
 ```r
@@ -617,6 +607,11 @@ Note:
 ```
 --
 
+.warning[
+* Several instructions on same line separate by **;**
+* The hastag **#** indicate a comment -&gt; Use heavily to document your code
+]
+--
 .student[
 Use the other operators
 ]
@@ -742,8 +737,8 @@ z2 &lt;- x == y
 [1] FALSE
 ```
 
-.footnote[
-Note: Do not mix 
+.warning[
+Do not mix 
 * == which is logical operator
 * = which is assignement
 ]
@@ -878,7 +873,7 @@ my_sum(10, 20)
 [1] 30
 ```
 
-.footnote[If you write 3 times the same piece of code write a function...]
+.warning[If you write 3 times the same piece of code write a function...]
 
 ---
 ## Examples of functions
@@ -1047,7 +1042,7 @@ str_c(first, last, sep = " ")
 
 --
 
-Warning : sometimes functions from different libraries have similar names
+.warning[Sometimes functions from different libraries have similar names]
 
 ---
 
@@ -1104,7 +1099,7 @@ df
 5     e  5  0.5381787  TRUE
 6     f  6  0.8350807 FALSE
 ```
-.footnote[
+.warning[
 * We will not get into the factor at this time, why we set `stringsAsFactors = FALSE` 
 * Notice the recycling rule ?
 ]
