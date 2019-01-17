@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Fundamental of Data Science for ESS</title>
+    <title>Fundamental of Data Science for EESS</title>
     <meta charset="utf-8">
     <meta name="author" content="Daniel Vaulot" />
     <link href="libs/remark-css/default.css" rel="stylesheet" />
@@ -25,24 +25,25 @@
 
 ## R session 01 - Introduction to R
 
-**Daniel Vaulot**
+.font120[**Daniel Vaulot**]
 
-Station Biologique de Roscoff, CNRS-Sorbonne Université
+2019-01-17
 
-Nanyang Technological University
+.pull-left[
+&lt;img src="img/NTU-Logo-full-colour.png" width="50%" style="display: block; margin: auto auto auto 0;" /&gt;
+]
 
-2019/01/17
+.pull-right[
+&lt;img src="img/logo_SBR.png" width="50%" style="display: block; margin: auto;" /&gt;
+]
+
+
 
 ---
-layout: true
 
+background-image: url(img/R-logo.png)
 
-
----
-
-class: middle
-
-## Outline
+# Outline
 
 .font150[
 * What is R and why use R ?
@@ -62,16 +63,59 @@ layout: true
 # Introduction
 
 ---
-## What is R ?
-.middle[
 
-&lt;img src="img/R-logo.png" width="60%" style="display: block; margin: auto;" /&gt;
-]
+background-image: url(img/R-logo.png)
 
-???
-- Who has used R before ?
-- What other programs have you used before ?
-- For those who are experts in R, please refrain to answer during this session...
+
+- .font150[Who has used R before ?]
+
+--
+
+- .font150[What other programming language have you used before ?]
+
+--
+
+- .font150[For those who are experts in R]
+
+--
+    * please refrain to answer during this session...
+    * help your neighbor...
+
+--
+
+.font150[* Two special slide formatting]
+
+.student[Your turn...]
+
+--
+
+.warning[Warning]
+
+---
+
+## Computer languages
+
+&lt;img src="img/computer-languages.png" width="100%" /&gt;
+
+---
+
+background-image: url(img/R-logo.png)
+
+## History of R
+
+* **Mid 1970s** - S Language for Statistical Computing conceived by John Chambers, Rick Becker, Trevor Hastie, Allan Wilks and others at Bell Labs
+
+* **Early 1990's** - R was first implemented in the early 1990’s by Robert Gentleman and Ross Ihaka, both faculty members at the University of Auckland. 
+
+* **1995** - Open Source Project
+
+* **1997** - Managed by the R Core Group
+
+* **2000** -  First release of R
+
+* **2011** - First release of R studio
+
+* [Historical notes - Paper from 1998](https://www.stat.auckland.ac.nz/~ihaka/downloads/Interface98.pdf)
 
 ---
 ## Why use R ?
@@ -843,11 +887,11 @@ Can you read the help and suggest a change in the way we call the function ?
 
 
 ```r
-paste(x, y)
+paste(first, last)
 ```
 
 ```
-[1] "TRUE FALSE"
+[1] "Donald Trump"
 ```
 
 
@@ -875,6 +919,7 @@ my_sum(10, 20)
 
 .warning[If you write 3 times the same piece of code write a function...]
 
+&gt; End of lecture one
 ---
 ## Examples of functions
 
@@ -973,7 +1018,7 @@ hist(y)
 
 .pull-right[
 
-&lt;img src="R-session-01-intro_files/figure-html/unnamed-chunk-56-1.png" style="display: block; margin: auto;" /&gt;
+&lt;img src="R-session-01-intro_files/figure-html/unnamed-chunk-58-1.png" style="display: block; margin: auto;" /&gt;
 ]
 
 .student[
@@ -1263,7 +1308,7 @@ df[df$label == 3, ]
 
 ```
 [1] label id    value flag 
-&lt;0 rows&gt; (or 0-length row.names)
+&lt;0 lignes&gt; (ou 'row.names' de longueur nulle)
 ```
 
 ---
