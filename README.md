@@ -1,5 +1,6 @@
 # Courses
-## Data Science for Environmental Sciences - NTU - 2019
+## R course
+#### ES7023 & ES0002: Fundamentals of Data Science for Earth and Environmental Systems Science, ASE, Nanyang Technological University
 * [R session 01 - Introduction](https://vaulot.github.io/r-course-ntu-2019/R-session-01-intro.html)
 
 # Tutorials
