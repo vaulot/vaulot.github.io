@@ -70,12 +70,10 @@ class: middle
 ]
 
 ---
-layout: true
+layout: false
 background: url(img/logo-markdown.png)
 
 # What is markdown ?
-
----
 
 .center[
 &lt;img src="img/markdown-John_Gruber.jpg" width="20%" /&gt;&lt;img src="img/markdown-Aaron_Swartz.jpg" width="20%" /&gt;
@@ -93,6 +91,63 @@ background: url(img/logo-markdown.png)
 * GitHub Flavored Markdown (GFM)
 * Pandoc
 * CommonMark
+
+---
+
+# Rmarkdown
+
+&lt;img src="img/package-rmarkdown-flow.png" width="70%" /&gt;
+
+## Mix
+
+* Markdown
+    - paragraph structure
+    - comments
+    - links
+
+* R code ("chunks")
+
+* Output of R code
+
+---
+
+layout: true
+
+# Your first Rmarkdown file
+
+---
+.student[Who has not been able to install Rmarkdown and Latex ?]
+
+--
+
+&lt;img src="img/package-rmarkdown-new-01.png" width="40%" /&gt;&lt;img src="img/package-rmarkdown-new-02.png" width="40%" /&gt;
+
+---
+
+![](img/R-markdown_new.gif)
+
+---
+
+## Knit to HTML
+
+&lt;img src="img/package-rmarkdown-knit.png" width="80%" /&gt;
+
+.warning[Save to "xxx.Rmd"]
+
+---
+
+&lt;img src="img/package-rmarkdown-HTML.png" width="100%" /&gt;
+
+---
+
+## Knit of pdf
+
+&lt;img src="img/package-rmarkdown-knit-pdf.png" width="40%" /&gt;
+
+---
+&lt;img src="img/package-rmarkdown-pdf-output.png" width="100%" /&gt;
+
+
 
 ---
 layout: true
@@ -239,13 +294,25 @@ ID | First | Last
 --- | --- | ---
 1 | Donald | Trump
 
+
+
 ---
+
 layout: false
 
-# Conversion
+# Rmarkdown conversion
+
+&lt;img src="img/R-markdown-flow.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+--
+
+
+.pull-left[
+* [knitr](https://yihui.name/knitr/) : R library
 
 * [Pandoc](https://pandoc.org/) : command line tool
-* Converts from **md** to **pdf**, **html**, **docx**...
+
+    * Converts from **md** to **pdf**, **html**, **docx**...
 
 
 ```r
@@ -255,82 +322,15 @@ layout: false
 # pdf
 &gt; pandoc test1.md -s -o test1.pdf
 ```
+]
+
+.pull-right[
 
 
-&lt;img src="img/pandoc.png" width="70%" style="display: block; margin: auto auto auto 0;" /&gt;
+&lt;img src="img/package-knitr-logo.png" width="30%" style="display: block; margin: auto;" /&gt;
 
----
-
-layout: true
-
-# Rmarkdown
-
----
-
-&lt;img src="img/package-rmarkdown-flow.png" width="70%" /&gt;
-
-## Mix
-
-* Markdown
-    - paragraph structure
-    - comments
-    - links
-
-* R code ("chunks")
-
-* Output of R code
-
----
-
-## Flow
-
-&lt;img src="img/R-markdown-flow.png" width="70%" style="display: block; margin: auto;" /&gt;
-
---
-
-&lt;img src="img/package-knitr-logo.png" width="10%" style="display: block; margin: auto auto auto 0;" /&gt;
-* [knitr](https://yihui.name/knitr/)  
-
-
----
-
-layout: true
-
-# Your first Rmarkdown file
-
----
-.student[Who has not been able to install Rmarkdown and Latex ?]
-
---
-
-&lt;img src="img/package-rmarkdown-new-01.png" width="40%" /&gt;&lt;img src="img/package-rmarkdown-new-02.png" width="40%" /&gt;
-
----
-
-![](img/R-markdown_new.gif)
-
----
-
-## Knit to HTML
-
-&lt;img src="img/package-rmarkdown-knit.png" width="80%" /&gt;
-
-.warning[Save to "xxx.Rmd"]
-
----
-
-&lt;img src="img/package-rmarkdown-HTML.png" width="100%" /&gt;
-
----
-
-## Knit of pdf
-
-&lt;img src="img/package-rmarkdown-knit-pdf.png" width="40%" /&gt;
-
----
-&lt;img src="img/package-rmarkdown-pdf-output.png" width="100%" /&gt;
-
-
+&lt;img src="img/pandoc.png" width="100%" style="display: block; margin: auto auto auto 0;" /&gt;
+]
 ---
 
 layout: true
@@ -376,7 +376,9 @@ layout: true
 
 ---
 
-## Add a code to chunk
+## Run chunk
+
+* Two options
 
 &lt;img src="img/package-rmarkdown-chunk-write.png" width="100%" /&gt;
 
