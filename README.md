@@ -36,6 +36,7 @@
 
 # Cruises
 * [Ilhas cruises 1 and 2 - Brazil 2017](https://vaulot.github.io/cruises/Ilhas_01.html)
+* [Green Edge - 2015-2016 - Ice Camp](https://vaulot.github.io/cruises/Green_Edge_Ice_Camp.html)
 
 # Metagenomes
 * [Subrata fish metagenomes - 2018](https://vaulot.github.io/metagenomes/Subrata_fish_metagenome_2018.html)
