@@ -26,10 +26,11 @@
 * [08 - Phyloseq examples](https://vaulot.github.io/metabarcoding/nz_2017/08-NZ_2017_phyloseq_plots.html)
 
 ## Singapore
+* [Phyloseq analysis](https://vaulot.github.io/metabarcoding/singapore/Metabarcoding_Singapore_phyloseq.html)
 * [Eukaryote synthesis](https://vaulot.github.io/metabarcoding/singapore/Metabarcoding_Singapore_eukaryotes)
 * [Eukaryote analysis 97%](https://vaulot.github.io/metabarcoding/singapore/Metabarcoding_Singapore_97.html)
 * [Eukaryote analysis 98%](https://vaulot.github.io/metabarcoding/singapore/Metabarcoding_Singapore_98.html)
-* [Eukaryote analysis ASV dada2](https://vaulot.github.io/metabarcoding/singapore/Metabarcoding_Singapore_ASV)
+* [Eukaryote analysis ASV dada2](https://vaulot.github.io/metabarcoding/singapore/Metabarcoding_Singapore_ASV.html)
 
 ## Antarctica 2015 - Sorted samples
 * [Dada2](https://vaulot.github.io/metabarcoding/antarctica_2015/Antar_dada2.html)
