@@ -46,7 +46,6 @@
 
 ## PR2
 * [PR2 statistics](https://vaulot.github.io/pr2/PR2_analysis.html)
-* [PR2 primer analysis](https://vaulot.github.io/pr2/PR2_Primers.html)
 * [PR2 update 4.11 - Management](https://vaulot.github.io/pr2/PR2_update_4.11.0_Misc.html)
 * [PR2 update 4.11 - Chloropicophyceae](https://vaulot.github.io/pr2/PR2_update_4.11.0_Chloropicophyceae.html)
 * [PR2 update 4.11 - Mamiellophyceae](https://vaulot.github.io/pr2/PR2_update_4.11.0_Mamiellophyceae.html)
@@ -54,6 +53,10 @@
 * [PR2 update 4.10](https://vaulot.github.io/pr2/PR2_update_4.10.0_pr2_original.html)
 * [PR2 update 4.9](https://vaulot.github.io/pr2/PR2_update_4.9.0_DinoRef.html)
 
+## PR2
+* [PR2 V4-V9 primer analysis](https://vaulot.github.io/pr2/PR2_Primers.html)
+* [PR2 primer analysis - set 32 - Fede Universal](https://vaulot.github.io/pr2/PR2_Primer_Set_32.html)
+* [PR2 primer analysis - set 83 - Wenshu V4](https://vaulot.github.io/pr2/PR2_Primer_Set_83.html)
 ## RCC
 * [RCC statistics](https://vaulot.github.io/rcc/RCC_statistics.html)
 * [RCC extract data](https://vaulot.github.io/rcc/RCC_custom_lists.html)
