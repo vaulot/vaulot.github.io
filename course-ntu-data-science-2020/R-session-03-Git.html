@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
   <head>
-    <title>Fundamental of Data Science for EESS</title>
+    <title>Fundamentals of Data Science for EESS</title>
     <meta charset="utf-8" />
     <meta name="author" content="Daniel Vaulot" />
     <link href="libs/remark-css/default.css" rel="stylesheet" />
@@ -22,7 +22,7 @@ background-image: url(img/course-logo.png), url(img/logo_SBR.png), url(img//NTU-
 background-position: right top 30px,  left 50px bottom 50px,right 50px bottom 50px, top 350px left 500px 
 background-size: 45%, 25%, 20%
 
-# Fundamental of Data Science for EESS
+# Fundamentals of Data Science for EESS
 
 ---
 
@@ -35,7 +35,7 @@ background-size: 45%, 25%, 20%
 
 .font120[**Daniel Vaulot**]
 
-2020-01-20
+2020-01-24
 
 &lt;br&gt;
 &lt;br&gt;
@@ -67,19 +67,17 @@ background-image: url(img/Linus_Torvalds.jpg),url(img/git-logo.png)
 background-position: right 10px top 10px, right 50px top 300px 
 background-size: 15%,10%
 
-## What is Git
+## What is Git ?
 
 * VCS: Version control system
 * Created by Linus Torvald in 2005
 
 --
 
-## What is Git useful for
-
-### Keep traces of all changes done to your work
+## What Git useful for ?
 
 --
-* On your computer
+* Keep traces of all changes done to your work
     * Undo changes
     * Perform test on software you are developing 
     * Backup your work (`GitHub`)
@@ -163,17 +161,17 @@ layout: true
 ]
 
 ---
-background-image: url(img/git-R.png)
-background-position: right 20px top 20px
-background-size: 35%
+background-image: url(img/git-R-new-project.png), url(img/git-R.png)
+background-position: right 20px top 20px, right 20px top 200px
+background-size: 20%, 30%
 
 ## Create R project and initialize Git
 
 .student[
-* Create a directory : git_01
+* Create project in a new directory : git_01
 * Create a new project
-* Change Projet Options (Tools/Project Options/Git/Git)
-* Restart the project
+* Select "Create git repository"
+* You can also change Project Options (Tools/Project Options/Git/Git)
 * Create a new Rmd file and save it
 ]
 --
@@ -181,10 +179,6 @@ background-size: 35%
 .student[
 * On top-right window go Git tab
 * Stage the files you want to commit
-* gitignore
-    * list file you do not want to save 
-    * open it in Rstudio
-    * Add 2 lines
 * Commit
     * Must write a message explaining what you changed
 ]
@@ -234,6 +228,8 @@ background-size: 35%
 * You can check in R the Commit
 ]
 ---
+exclude: false
+
 background-image: url(img/git-bash.png)
 background-position: right 20px top 20px
 background-size: 35%
@@ -246,6 +242,7 @@ background-size: 35%
 * More / Shell...
 ]
 --
+exclude:true
 
 .pull-left[
 
@@ -288,6 +285,7 @@ background-size: 35%
 * In fact revert is a **new commit**
 ]
 ---
+exclude: false
 
 background-image: url(img/git-bash.png)
 background-position: right 20px top 20px
@@ -313,22 +311,27 @@ $ git revert a80df29cc709e25db49cdfed11c0c1b0399d4a72
 ]
 
 ---
+
 layout: true
 
 # Local Git - Branching
 
 ---
+background-image: url(img/git-branch-08.png)
+background-position: center top 100px
+background-size: 70% 
 
-## Why create branches
+## Why create branches ?
 
 
 .font150[
-* Testing
-* Collaborative work
-    * Different people can contribute and fix bugs
+* Testing: Do not destroy your own work
+* Collaborative work: Different people can contribute and fix bugs
 ]
 
 ---
+exclude: false
+
 ## How the data are stored
 
 &lt;img src="img/git-commit-00.png" width="40%" style="display: block; margin: auto;" /&gt;
@@ -338,12 +341,16 @@ Three elements:
 * **tree** - pointer to the list of the blobs
 * **commit** - pointer to the tree
 ---
+exclude: false
+
 
 ## Commit
 
 &lt;img src="img/git-commit-01.png" width="60%" style="display: block; margin: auto;" /&gt;
 
 ---
+exclude: false
+
 
 ## The master branch
 
@@ -352,6 +359,8 @@ Three elements:
 A branch in Git is simply a movable **pointer** to one commit. 
 
 ---
+exclude: false
+
 
 ## Create a new branch
 
@@ -363,6 +372,8 @@ $ git branch testing
 ```
 
 ---
+exclude: false
+
 
 ## Move the HEAD to the new branch
 
@@ -374,12 +385,16 @@ $ git checkout testing
 ```
 
 ---
+exclude: false
+
 
 ## Make one commit on the testing branch
 
 &lt;img src="img/git-branch-03.png" width="60%" style="display: block; margin: auto;" /&gt;
 
 ---
+
+exclude: false
 
 ## Move the HEAD back to the master branch
 
@@ -392,6 +407,8 @@ $ git checkout master
 
 ---
 
+exclude: false
+
 ## Do one commit on the master branch
 
 &lt;img src="img/git-branch-05.png" width="50%" style="display: block; margin: auto;" /&gt;
@@ -399,6 +416,8 @@ $ git checkout master
 * Now we have two diverging branches
 
 ---
+exclude: false
+
 background-image: url(img/git-branch-06.png)
 background-position: right 20px top 20px
 background-size: 50%
@@ -425,13 +444,12 @@ Merge made by the 'recursive' strategy.
 ]
 
 ---
+exclude: false
+
 
 ## After merging
 
 &lt;img src="img/git-branch-07.png" width="50%" style="display: block; margin: auto;" /&gt;
-&lt;br&gt;
-
---
 
 * Now can delete the branch `testing`
 &lt;br&gt;
@@ -441,6 +459,8 @@ $ git branch -d testing
 ```
 
 ---
+exclude: false
+
 background-image: url(img/git-R.png)
 background-position: right 20px top 20px
 background-size: 35%
@@ -453,9 +473,11 @@ Could be done also with GitHub Desktop or Git bash
 * Create a new branch `test`or the name you want
 ]
 --
+exclude: false
 * Notice that R creates the branch and switch to the branch
 
 --
+exclude: false
 
 .student[
 * Make some change in the Rmd file and save
@@ -463,8 +485,10 @@ Could be done also with GitHub Desktop or Git bash
 * Go back and forth between the two branches `master` and `test`
 ]
 --
+exclude: false
 * Observe how the Rmd file changes back and forth...
 --
+exclude: false
 .student[
 * Go to branch `master`
 * Make some change in the Rmd file (elsewhere e.g. Plot) and save
@@ -473,6 +497,8 @@ Could be done also with GitHub Desktop or Git bash
 
 
 ---
+exclude: false
+
 background-image: url(img/git-github-desktop.png)
 background-position: right 20px top 20px
 background-size: 35%
@@ -488,6 +514,7 @@ Could be done also with Git bash
 ]
 
 --
+exclude: false
 
 .student[
 * Branch/Delete
@@ -541,19 +568,21 @@ background-size: 50%
 ]
 
 ---
+background-image: url(img/git-push-pull.png)
+background-position: right 20px top 100px
+background-size: 70% 
 
 ## Computer &lt;--&gt; Server synchronization
 
 * How are we going to synchronize these changes back to our computer ?
 
---
-
-&lt;img src="img/git-push-pull.png" width="60%" style="display: block; margin: auto;" /&gt;
-
 * **Pull**: from server to computer
 * **Push**: from computer to server
 
 ---
+background-image: url(img/git-pull.png)
+background-position: right 20px top 20px
+background-size: 60% 
 
 ## Pull from server
 
@@ -563,7 +592,6 @@ background-size: 50%
 * Pull
 * Go to RStudio - What happened to your Rmd file
 ]
-&lt;img src="img/git-pull.png" width="55%" style="display: block; margin: auto;" /&gt;
 
 * If you make commits locally you need to **push** to server
 * You can push several commits at once
@@ -578,6 +606,8 @@ background-size: 55%
 &lt;img src="img/git-clone.png" width="55%" style="display: block; margin: auto;" /&gt;
 
 ---
+exclude: false
+
 background-image: url(img/git-pull-request.png)
 background-position: center right 30px 
 background-size: 55%
@@ -589,6 +619,7 @@ background-size: 55%
 * You want to merge back into the project
 
 --
+exclude: false
 
 .student[
 * R
@@ -604,7 +635,7 @@ background-size: 55%
 ]    
 ---
 layout: false
-class: middle, inverse
+class: inverse middle
 
 # Recap
 
