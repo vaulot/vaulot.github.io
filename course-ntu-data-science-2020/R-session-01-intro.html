@@ -37,7 +37,7 @@ background-size: 45%, 25%, 20%
 
 .font120[**Daniel Vaulot**]
 
-2020-01-22
+2020-01-24
 
 &lt;br&gt;
 &lt;br&gt;
@@ -1189,9 +1189,12 @@ layout: true
 
 
 ```r
-df &lt;- data.frame(label = letters[1:6], id = 1:6, value = rnorm(6, mean = 0, sd = 1), 
-    flag = c(TRUE, FALSE), stringsAsFactors = FALSE)
-df
+  df &lt;- data.frame(label = letters[1:6], 
+                   id = 1:6, 
+                   value = rnorm(6, mean = 0, sd = 1), 
+                   flag=c(TRUE, FALSE),                   # recycling rule
+                   stringsAsFactors = FALSE)
+  df
 ```
 
 ```
@@ -1204,8 +1207,7 @@ df
 6     f  6 -2.4274570 FALSE
 ```
 .warning[
-* We will not get into the factor at this time, why we set `stringsAsFactors = FALSE` 
-* Notice the recycling rule ?
+* We will NOT use factors: `stringsAsFactors = FALSE` 
 ]
 
 
@@ -1264,20 +1266,34 @@ colnames(df)  # columns names
 ```
 
 ---
+## Access specific value
 
-## Access specific column
-* Use `$`notation
-
+* Use the `df[i,j]` notation, first index corresponds to row, second index to column
 
 ```r
-df$value
+df[5, 3]
 ```
 
 ```
-[1] -0.5324537 -0.2858342 -0.7311013 -1.2440367 -0.8671309 -2.4274570
+[1] -0.8671309
 ```
-
 --
+
+* Specifiy the name of the column
+
+```r
+df[5, "value"]
+```
+
+```
+[1] -0.8671309
+```
+.warning[
+* The result is a **vector**
+]
+---
+
+## Access specific column
 
 * Use the `df[i,j]` notation
 
@@ -1296,56 +1312,65 @@ df[, "value"]
 ```
 [1] -0.5324537 -0.2858342 -0.7311013 -1.2440367 -0.8671309 -2.4274570
 ```
+.warning[
+* The result is a **vector**
+]
 
 ---
 
-## Access specific value
-*  `$` for the column, `[i]` for the row
+## Access specific column
+
+* Use `$`notation
 
 
 ```r
-df$label[5]
+df$value
 ```
 
 ```
-[1] "e"
-```
-
-```r
-df$label[1:5]
-```
-
-```
-[1] "a" "b" "c" "d" "e"
+[1] -0.5324537 -0.2858342 -0.7311013 -1.2440367 -0.8671309 -2.4274570
 ```
 
 --
 
-* Use the `df[i,j]` notation, first index corresponds to row, second index to column
+## This can be used to access a specific value
+
+*  `$` for the column, `[i]` for the row
+
 
 ```r
-df[5, 1]
+df$value[5]
 ```
 
 ```
-[1] "e"
-```
-
-```r
-df[1:5, "value"]
-```
-
-```
-[1] -0.5324537 -0.2858342 -0.7311013 -1.2440367 -0.8671309
+[1] -0.8671309
 ```
 
 ---
+## Access row
 
-## Filter the data
+* Use the `df[i,j]` notation
+
+```r
+df[1, ]
+```
+
+```
+  label id      value flag
+1     a  1 -0.5324537 TRUE
+```
+.warning[
+* The result is a **data frame**
+]
+
+---
+
+## Access specific rows
+* Rows for which the value of id &lt;= 3
 
 
 ```r
-df[df$id &lt;= 3, ]
+   df[df$id &lt;= 3,]
 ```
 
 ```
@@ -1370,6 +1395,8 @@ df[df$label == "c", ]
 3     c  3 -0.7311013 TRUE
 ```
 
+.warning[This syntax is complicated - tidyverse packages make it much more easy to manipulate and remember]
+
 ---
 layout: false
 
@@ -1377,28 +1404,14 @@ class: inverse
 
 # Recap
 
+.font150[
 - R is case sensitive: Z !=  z
-
---
-
 - Objects: data types vs data structures
-
---
-
 - Vectors: think in vector operations
-
---
-
 - Operators: arithmetic vs. logical
-
---
-
 - Functions: try to practice
-
---
-
 - Data frames: most useful objects (Excel type)
-
+]
 ---
 exclude: false
 layout: false
