@@ -5,8 +5,8 @@
 * [Session 01 - 2020-01-22 - Introduction to R](https://vaulot.github.io/course-ntu-data-science-2020/R-session-01-intro.html)
 * [Session 02 - 2020-01-24 - R markdown](https://vaulot.github.io/course-ntu-data-science-2020/R-session-02-markdown.html)
 * [Session 03 - 2020-01-24 - Git](https://vaulot.github.io/course-ntu-data-science-2020/R-session-03-Git.html)
-* [Session 04 - 2020-02-07 - Git](https://vaulot.github.io/course-ntu-data-science-2020/R-session-04-data_wrangling.html)
-* [Session 05 - 2020-02-14 - Git](https://vaulot.github.io/course-ntu-data-science-2020/R-session-05-data_visualization.html)
+* [Session 04 - 2020-02-07 - Data wrangling](https://vaulot.github.io/course-ntu-data-science-2020/R-session-04-data_wrangling.html)
+* [Session 05 - 2020-02-14 - Data viz](https://vaulot.github.io/course-ntu-data-science-2020/R-session-05-data_visualization.html)
 
 #### Experimental Design and Analysis, supervised by Eleanor Slade, ASE, Nanyang Technological University
 * [Session 01 - 2020-01-21 - Introduction to R](https://vaulot.github.io/course-ntu-experimental-design-2020/R-session-01-intro.html)
