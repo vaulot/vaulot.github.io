@@ -1,26 +1,18 @@
 # Courses
-## R courses
-### 2020
-#### ES7023 & ES0002, supervised by David Lallemant: Fundamentals of Data Science for Earth and Environmental Systems Science, ASE, Nanyang Technological University
-* [Session 01 - 2020-01-22 - Introduction to R](https://vaulot.github.io/course-ntu-data-science-2020/R-session-01-intro.html)
-* [Session 02 - 2020-01-24 - R markdown](https://vaulot.github.io/course-ntu-data-science-2020/R-session-02-markdown.html)
-* [Session 03 - 2020-01-24 - Git](https://vaulot.github.io/course-ntu-data-science-2020/R-session-03-Git.html)
-* [Session 04 - 2020-02-07 - Data wrangling](https://vaulot.github.io/course-ntu-data-science-2020/R-session-04-data_wrangling.html)
-* [Session 05 - 2020-02-14 - Data viz](https://vaulot.github.io/course-ntu-data-science-2020/R-session-05-data_visualization.html)
 
-#### Experimental Design and Analysis, supervised by Eleanor Slade, ASE, Nanyang Technological University
-* [Session 01 - 2020-01-21 - Introduction to R](https://vaulot.github.io/course-ntu-experimental-design-2020/R-session-01-intro.html)
-* [Session 02 - 2020-01-23 - Data visualization](https://vaulot.github.io/course-ntu-experimental-design-2020/R-session-02-data_visualization.html)
-* [Session 03 - 2020-01-23 - R markdown](https://vaulot.github.io/course-ntu-experimental-design-2020/R-session-03-markdown.html)
+## Asian School of the Environment, Nanyang Technological University, Singapore
+See [NTU courses](https://vaulot.netlify.com/#teaching)
+
+### 2020
+
+#### ES7023 & ES0002, supervised by David Lallemant - Fundamentals of Data Science for Earth and Environmental Systems Science,
+
+#### ES3307, supervised by Eleanor Slade - Experimental Design and Analysis
 
 ### 2019
-#### ES7023 & ES0002, supervised by David Lallemant - 2019: Fundamentals of Data Science for Earth and Environmental Systems Science, ASE, Nanyang Technological University
-* [Session 01 - 2019-01-17 - Introduction to R](https://vaulot.github.io/course-ntu-data-science-2019/R-session-01-intro.html)
-* [Session 02 - 2019-01-24 - R markdown](https://vaulot.github.io/course-ntu-data-science-2019/R-session-02-markdown.html)
-* [Session 03 - 2019-01-31 - Data wrangling](https://vaulot.github.iocourse-ntu-data-science-2019/R-session-03-data_wrangling.html)
-* [Session 04 - 2019-02-07 - Data visualization](https://vaulot.github.io/course-ntu-data-science-2019/R-session-04-data_visualization.html)
-* [Session 05 - 2019-03-15 - Mapping](https://vaulot.github.io/course-ntu-data-science-2019/R-session-05-mapping.html)
-* [Session 06 - 2019-04-18 - Git](https://vaulot.github.io/course-ntu-data-science-2019/R-session-06-Git.html)
+
+#### ES7023 & ES0002, supervised by David Lallemant - Fundamentals of Data Science for Earth and Environmental Systems
+
 
 # Tutorials
 ## R
