@@ -36,7 +36,7 @@ background-size: 45%, 25%, 20%
 
 .font120[**Daniel Vaulot**]
 
-2020-04-10
+2020-04-13
 
 ---
 layout: false
@@ -232,8 +232,6 @@ exclude: true
 
 ]
 
---
-
 .pull-right[
 
 ![](R-session-07-time_series_files/figure-html/unnamed-chunk-4-1.png)&lt;!-- --&gt;
@@ -375,6 +373,7 @@ library(lubridate)
 [1] "1953-08-22"
 ```
 ]
+
 ---
 
 ## Parse date
@@ -403,6 +402,7 @@ Warning: All formats failed to parse. No formats found.
 [1] "1953-08-22 16:00:00 UTC"
 ```
 ]
+
 ---
 
 ## Extract information from dates
@@ -443,6 +443,7 @@ wday(bday, label=TRUE, abbr = FALSE, week_start = 1)
 7 Levels: lundi &lt; mardi &lt; mercredi &lt; jeudi &lt; vendredi &lt; ... &lt; dimanche
 ```
 ]
+
 ---
 
 ## Rounding up dates
@@ -458,6 +459,7 @@ floor_date(bday, unit="month")
 [1] "1953-08-01"
 ```
 ]
+
 ---
 
 ## Arithmetic
@@ -516,6 +518,7 @@ seconds_to_period(int_length(binterval))
 [1] "24337d 0H 0M 0S"
 ```
 ]
+
 ---
 layout: true
 
