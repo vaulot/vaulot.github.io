@@ -44,11 +44,6 @@ See [NTU courses](https://vaulot.netlify.com/#teaching)
 
 # Databases
 
-## PR2
-* [PR2 V4-V9 primer analysis](https://vaulot.github.io/pr2/PR2_Primers.html)
-* [PR2 primer analysis - set 32 - Fede Universal](https://vaulot.github.io/pr2/PR2_Primer_Set_32.html)
-* [PR2 primer analysis - set 83 - Wenshu V4](https://vaulot.github.io/pr2/PR2_Primer_Set_83.html)
-
 ## RCC
 * [RCC statistics](https://vaulot.github.io/rcc/RCC_statistics.html)
 * [RCC extract data](https://vaulot.github.io/rcc/RCC_custom_lists.html)
@@ -60,4 +55,3 @@ See [NTU courses](https://vaulot.netlify.com/#teaching)
 * [Distribution of Malina RCC2288](https://vaulot.github.io/papers/RCC2288.html)
 * [Distribution of Chlorophyta at OSD stations](https://vaulot.github.io/papers/OSD_Chlorophyta.html)
 * [Distribution of Mamiellophyceae at OSD stations](https://vaulot.github.io/papers/OSD_Mamiello.html)
-* [Distribution of Pelagophyceae](https://vaulot.github.io/papers/Pelago.html)
